@@ -1,0 +1,173 @@
+/*АГУЛЬНЫЯ ПАРАМЕТРЫ*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+	margin:0 auto;
+	width: 375px;
+	height: 667px;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 4px 3px 8px 2px #969696;
+}
+
+
+/*ПЕРШЫ ЭКРАН*/
+
+.main-container__header {
+	font-size: 28px;
+	font-weight: 700;
+	padding: 50px 10px 0px 10px;
+}
+
+.main-container__text {
+	font-size: 18px;
+	padding: 20px 25px 0px 25px;
+	text-align: left;
+}
+
+.main-container__text--share {
+	font-size: 18px;
+	padding: 10px 25px 0px 29px;
+	text-align: left;
+}
+
+.main-container__button {
+	width: 280px;
+	height: 60px;
+	background-color: lightcoral;
+	color: white;
+	font-size: 25px;
+	border-radius: 40px;
+	margin-top: 40px;
+	position: relative;
+    top: 50%;
+	border: none;
+	cursor: pointer;
+}
+
+.main-container__button:hover {
+	opacity: 90%;
+}
+
+.main-container__button:active {
+	background-color: indianred;
+}
+
+
+/*ДРУГІ ЭКРАН*/
+
+/* Customize the label (the container) */
+.main-container__checkbox--item {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.main-container__checkbox--item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.main-container__checkbox--checkmark {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.main-container__checkbox--item:hover input ~ .main-container__checkbox--checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.main-container__checkbox--item input:checked ~ .main-container__checkbox--checkmark {
+  background-color: yellowgreen;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.main-container__checkbox--checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.main-container__checkbox--item input:checked ~ .main-container__checkbox--checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.main-container__checkbox--item .main-container__checkbox--checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*Экран профіляў*/
+
+
+.profile__photo {
+	width: 375px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.profile__name {
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	font-weight: 400;
+	font-size: 23px;
+}
+
+.profile__city {
+	margin: 0;
+	text-align: left;
+}
+
+.profile__bio {
+	text-align: left;
+	margin: 20px 20px 0;
+}
+
+.like-dislike-button  {
+	background-color: red;
+	width: 80px;
+	height: 80px;
+	border-radius: 180px;
+	border: none;
+	position: relative;
+	top: 30px;
+	margin: 30px;
+}
+
