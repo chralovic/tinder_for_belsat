@@ -62,102 +62,34 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
-/*ДРУГІ ЭКРАН*/
-
-/* Customize the label (the container) */
-.main-container__checkbox--item {
-  display: block;
-  position: relative;
-  padding-left: 15px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.invisible {
+	visibility: hidden;
 }
 
-/* Hide the browser's default checkbox */
-.main-container__checkbox--item input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.visible {
+	visibility: visible;
+	
 }
-
-/* Create a custom checkbox */
-.main-container__checkbox--checkmark {
-  position: absolute;
-  top: 0;
-  left: 100px;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.main-container__checkbox--item:hover input ~ .main-container__checkbox--checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.main-container__checkbox--item input:checked ~ .main-container__checkbox--checkmark {
-  background-color: yellowgreen;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.main-container__checkbox--checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.main-container__checkbox--item input:checked ~ .main-container__checkbox--checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.main-container__checkbox--item .main-container__checkbox--checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-
 /*Экран профіляў*/
 
 
 .profile__photo {
 	width: 375px;
-	height: auto;
 	border-radius: 20px;
 }
 
 .profile__name {
 	text-align: left;
-	margin-left: 20px;
-	margin-top: 5px;
 	font-weight: 400;
 	font-size: 23px;
 }
 
 .profile__city {
-	margin: 0;
 	text-align: left;
 }
 
 .profile__bio {
 	text-align: left;
-	margin: 20px 20px 0;
 }
 
 .like-dislike-button  {
@@ -169,5 +101,6 @@ font-family: 'Montserrat', sans-serif;
 	position: relative;
 	top: 30px;
 	margin: 30px;
+	cursor: pointer;
 }
 

@@ -1,0 +1,94 @@
+/*ДРУГІ ЭКРАН*/
+
+/* Customize the label (the container) */
+.main-container__checkbox--item {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.main-container__checkbox--item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.main-container__checkbox--checkmark {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.main-container__checkbox--item:hover input ~ .main-container__checkbox--checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.main-container__checkbox--item input:checked ~ .main-container__checkbox--checkmark {
+  background-color: yellowgreen;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.main-container__checkbox--checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.main-container__checkbox--item input:checked ~ .main-container__checkbox--checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.main-container__checkbox--item .main-container__checkbox--checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*
+______
+
+
+<!-- чэкбокс
+		<h1 class="main-container__header">Выберите пол партнёров, которых вы ищете</h1>
+		<p class="main-container__text"> Можно выбрать один или оба варианта: </p>
+		
+		<span class="main-container__checkbox">
+		
+		<label class="main-container__checkbox--item checkbox--male">Мужчины
+        <input type="checkbox" checked="checked">
+        <span class="main-container__checkbox--checkmark"></span>
+        </label>
+
+        <label class="main-container__checkbox--item checkbox--female">Женщины
+        <input type="checkbox">
+        <span class="main-container__checkbox--checkmark"></span>
+        </label>
+        </span>
+        
+        <button class="main-container__button"> Искать </button>  
+        
