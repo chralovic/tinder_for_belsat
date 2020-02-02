@@ -6,6 +6,7 @@
 <title>Это мэтч! «Tinder» с известными белорусами</title>
  <link rel="stylesheet" type="text/css" href="./tinder_styles.css" />
  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto:400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 
@@ -20,33 +21,36 @@
 		<button class="main-container__button"> Начать! </button>
 		</div>
 	
-
-        
+         <div class="profile  invisible" id="nr0">
+         Ты лох і застанешся адзін
+         </div>
+       
+       
         <div class="profile  invisible" id="nr1">
         <img class="profile__photo" src="tinder_images/vasile1.png" alt=""/>
         <p class="profile__name"> Маша Василевич, 22 года</p>
-        <p class="profile__city">Живёт в Минске</p>
+        <p class="profile__city"><i class="fa fa-home icon-house" aria-hidden="true"></i> Живёт в Минске</p>
         <p class="profile__bio"> Я сингл. Про “фаворитку” СМИ лгут. Свожу на свидание в столовую Палаты Представителей.</p>
-        <button class="like-dislike-button dislike1"> </button> 
-        <button class="like-dislike-button  like1"> </button> 
+        <button class="dislike-button like-dislike-button dislike1"><i class="fa fa-times" aria-hidden="true"></i></button> 
+        <button class="like-button like-dislike-button  like1"><i class="fa fa-heart" aria-hidden="true"></i></button> 
 		</div> 
         
         <div class="profile invisible" id="nr2">
         <img class="profile__photo" src="" alt=""/>
         <p class="profile__nam"> Николай Лукашенко, 15 лет</p>
-        <p class="profile__city">Живёт в Минске</p>
+        <p class="profile__city"><i class="fa fa-home icon-house" aria-hidden="true"></i>Живёт в Минске</p>
         <p class="profile__bio"> Ищу принцессу. Научу говорить по-китайски. Только ничего не спрашивайте про папу. И мне уже почти 16.</p>
-        <button class="like-dislike-button dislike2"> </button> 
-        <button class="like-dislike-button  like2"> </button> 
+        <button class="dislike-button like-dislike-button dislike2"> <i class="fa fa-times" aria-hidden="true"></i></button> 
+        <button class="like-button like-dislike-button  like2"><i class="fa fa-heart" aria-hidden="true"></i> </button> 
         </div>	
         
         <div class="profile invisible" id="nr3">
         <img class="profile__photo" src="" alt=""/>
         <p class="profile__name"> Марианна Щеткина, 61 год</p>
-        <p class="profile__city">Живёт в Минске</p>
+        <p class="profile__city"><i class="fa fa-home icon-house" aria-hidden="true"></i>Живёт в Минске</p>
         <p class="profile__bio"> Можем встретиться, если покажешь справку, что ты не социальный иждивенец.</p>
-        <button class="like-dislike-button dislike3"> </button> 
-        <button class="like-dislike-button  like3"> </button> 
+        <button class="dislike-button like-dislike-button dislike3"><i class="fa fa-times" aria-hidden="true"></i> </button> 
+        <button class="like-button like-dislike-button  like3"><i class="fa fa-heart" aria-hidden="true"></i> </button> 
          </div>
 		
 		
@@ -54,22 +58,44 @@
 		<div class="profile invisible" id="nr4">
         <img class="profile__photo" src="" alt=""/>
         <p class="profile__name"> Макс Корж, 31 год</p>
-        <p class="profile__city">Живёт в Минске</p>
-        <p class="profile__bio"> Парень из Лунинца. Живу в кайф. Продвигаю белорусскую тему. Интервью не даю. Даже, если ты Юра Дудь</p>
-        <button class="like-dislike-button dislike4"> </button> 
-        <button class="like-dislike-button  like4"> </button> 
+        <p class="profile__city"><i class="fa fa-home icon-house" aria-hidden="true"></i>Живёт в Минске</p>
+        <p class="profile__bio"> Парень из Лунинца. Живу в кайф. Продвигаю белорусскую тему. Интервью не даю. Даже если ты Юра Дудь <i class="em em-stuck_out_tongue" aria-role="presentation" aria-label="FACE WITH STUCK-OUT TONGUE"></i></p>
+			<button class="dislike-button like-dislike-button dislike4"> <i class="fa fa-times" aria-hidden="true"></i></button> 
+        <button class="like-button like-dislike-button  like4"><i class="fa fa-heart" aria-hidden="true"></i> </button> 
          </div>
          
-         <div class="profile invisible" id="finalMatch">
+        <div class="profile invisible" id="finalMatch">
         <p>Ура! Теперь нажміте чтобы узнать свою пару </p>
         <button id="finalMatchButton" class="like-dislike-button" > Узнать!</button> 
-         </div>
+        </div>
+         
+         <div class="itsAMatch invisible" ><img src="tinder_images/match.png"></div>
+         
+<div class="shareButton invisible" >  
+ <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://nn.by" data-a2a-title="page-name" >
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_vk"></a>
+<a class="a2a_button_viber"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_odnoklassniki"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.locale = "ru";
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+   </div>
 	
 	</div>	
 			
-			<p id="demo"></p>
+		
 				
 <script src="tinder_js.js"></script>
+		 
 			
 </body>
 </html>

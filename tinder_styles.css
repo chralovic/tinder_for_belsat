@@ -7,6 +7,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
+	background-color: antiquewhite;
+	height: auto;
 	
 	
 }
@@ -18,7 +20,8 @@ font-family: 'Montserrat', sans-serif;
 	border-radius: 20px;
 	text-align: center;
 	box-shadow: 4px 3px 8px 2px #969696;
-	/*overflow: hidden;*/
+	background-color: #f8f8f8;
+	overflow: hidden;
 
 }
 
@@ -79,7 +82,7 @@ font-family: 'Montserrat', sans-serif;
 	width: 375px;
 	border-radius: 20px;
 	position: relative;
-	bottom: 590px;
+	bottom: 610px;
 }
 
 .profile__name {
@@ -87,36 +90,53 @@ font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 23px;
 	position: relative;
-	bottom: 590px;
+	bottom: 710px;
+	color: white;
+}
+
+.icon-house {
+	font-size: 13px;
 }
 
 .profile__city {
 	text-align: left;
 	position: relative;
-	bottom: 590px;
+	bottom: 730px;
+	color: white;
 }
 
 .profile__bio {
 	text-align: left;
 	position: relative;
-	bottom: 590px;
-}
-
-.like-dislike-button  {
-	background-color: red;
-	width: 80px;
-	height: 80px;
-	border-radius: 180px;
-	border: none;
-	position: relative;
-	margin: 30px;
-	cursor: pointer;
-	bottom: 630px;
+	bottom: 680px;
 }
 
 
 .profile__nam {
 	position: relative;
 	top: -1340px;
+}
+
+/*кнопкі*/
+.dislike-button {
+  color: #e8315b;
+	font-size: 37px;
+}
+
+.like-button {
+  color: #44d48c;
+	font-size: 31px;
+}
+
+.like-dislike-button  {
+	width: 70px;
+	height: 70px;
+	border-radius: 180px;
+	border: none;
+	position: relative;
+	margin: 0 40px;
+	cursor: pointer;
+	bottom: 630px;
+	box-shadow: 0px 1px 27px -12px rgba(166,164,166,0.57);
 }
 

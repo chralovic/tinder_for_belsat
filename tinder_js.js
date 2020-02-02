@@ -56,24 +56,28 @@ document.querySelector(".like4").addEventListener( 'click', cleanProfiles );
 function randomProfile() {
 	document.querySelector('#finalMatch').classList.add('invisible');
 	let numberMatches = likedProfiles.length;
+	if (numberMatches === 0) {
+		document.querySelector('#nr0').classList.remove('invisible');
+	} else {
 	let i = Math.floor(Math.random() * numberMatches);
 	console.log( likedProfiles[i] );
 	document.querySelector('#nr' + likedProfiles[i]).classList.remove('invisible');
 	document.querySelector('.like' + likedProfiles[i] ).classList.add('invisible');
 	document.querySelector('.dislike' + likedProfiles[i] ).classList.add('invisible');
-	
-	/* дадаць тут з'яўленне тэксту "эта мэтч!" і замест кнопачак - падзяліцца мусіць быць*/
-	
+	document.querySelector('.itsAMatch').classList.remove('invisible');
+		document.querySelector('.shareButton').classList.remove('invisible');
+		}
 }
+
 
 document.querySelector("#finalMatchButton").addEventListener( 'click', randomProfile );
 
+
+
+
 /*
-1) калі 0 профіляў
 
 2) не працуе клік на мабілцы і чамусьці на кампе таксама
-
-3) трэба прыкруціць шэры
 
 4) трэба навесці парадак з цссам
 */
