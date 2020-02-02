@@ -7,6 +7,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
+	
+	
 }
 
 .main-container {
@@ -16,6 +18,8 @@ font-family: 'Montserrat', sans-serif;
 	border-radius: 20px;
 	text-align: center;
 	box-shadow: 4px 3px 8px 2px #969696;
+	/*overflow: hidden;*/
+
 }
 
 
@@ -73,23 +77,32 @@ font-family: 'Montserrat', sans-serif;
 /*Экран профіляў*/
 
 
+
 .profile__photo {
 	width: 375px;
 	border-radius: 20px;
+	position: relative;
+	bottom: 590px;
 }
 
 .profile__name {
 	text-align: left;
 	font-weight: 400;
 	font-size: 23px;
+	position: relative;
+	bottom: 590px;
 }
 
 .profile__city {
 	text-align: left;
+	position: relative;
+	bottom: 590px;
 }
 
 .profile__bio {
 	text-align: left;
+	position: relative;
+	bottom: 590px;
 }
 
 .like-dislike-button  {
@@ -99,8 +112,14 @@ font-family: 'Montserrat', sans-serif;
 	border-radius: 180px;
 	border: none;
 	position: relative;
-	top: 30px;
 	margin: 30px;
 	cursor: pointer;
+	bottom: 630px;
+}
+
+
+.profile__nam {
+	position: relative;
+	top: -1340px;
 }
 
