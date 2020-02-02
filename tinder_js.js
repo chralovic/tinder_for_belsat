@@ -44,12 +44,19 @@ function randomProfile() {
 	let numberMatches = likedProfiles.length;
 	let i = Math.floor(Math.random() * numberMatches);
 	console.log( likedProfiles[i] );
-	likedProfiles[i];
+	
 }
 
 document.querySelector("#finalMatchButton").addEventListener( 'click', randomProfile );
 
 /*
---Гэтая хуйня паказвае рандомны профіль з усіх профіляў, а не з табліцы: document.querySelector('#nr'+ i).classList.remove('invisible'); -- 
+1) Гэтая хуйня паказвае рандомны профіль з усіх профіляў, а не з табліцы: document.querySelector('#nr'+ i).classList.remove('invisible'); 
+
+
+2) не працуе клік на мабілцы і чамусьці на кампе таксама
+
+3) трэба прыкруціць шэры
+
+4) трэба навесці парадак з цссам
 */
 
