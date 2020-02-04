@@ -1,3 +1,5 @@
+/*
+
 
 /* пераход ад правілаў да першага профіля */
 function startGame() {
@@ -74,11 +76,4 @@ document.querySelector("#finalMatchButton").addEventListener( 'click', randomPro
 
 
 
-
-/*
-
-2) не працуе клік на мабілцы і чамусьці на кампе таксама
-
-4) трэба навесці парадак з цссам
-*/
 
