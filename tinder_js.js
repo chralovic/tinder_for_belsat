@@ -10,7 +10,7 @@ document.querySelector(".main-container__button").addEventListener('click', star
 const likedProfiles = [];
 
 /* пятля для лайкання */
-for (let i=1; i<4; i++) {
+for (let i=1; i<10; i++) {
 	function like() {
 	document.querySelector('#nr' + i ).classList.add('invisible');
 	document.querySelector('#nr' + (1 + i)).classList.remove('invisible');
@@ -23,17 +23,17 @@ for (let i=1; i<4; i++) {
 
 /* паправіла свой касяк тут -- бо калі б не гэтая функцыя, то апошні профіль немагчыма было б дадаць у табліцу */
 
-function like4() {
-	const likedDiv = 4;
+function like10() {
+	const likedDiv = 10;
 	likedProfiles.push(likedDiv);
 	return likedProfiles;
 }
 
-document.querySelector(".like4").addEventListener( 'click', like4 );
+document.querySelector(".like10").addEventListener( 'click', like10 );
 
 /* пятля для дызлайкаў */
 
-for (let i=1; i<4; i++) {
+for (let i=1; i<10; i++) {
 	function dislike() {
 	document.querySelector('#nr' + i ).classList.add('invisible');
 	document.querySelector('#nr' + (1 + i)).classList.remove('invisible');
@@ -44,12 +44,12 @@ for (let i=1; i<4; i++) {
 
 /* гэтая функцыя хавае апошні профіль і замест яго паказывае тэксцік "ура вы ўсіх палайкалі даведайцеся хто вашая пара */
 function cleanProfiles(){
-	document.querySelector('#nr4').classList.add('invisible');
+	document.querySelector('#nr10').classList.add('invisible');
 	document.querySelector('#finalMatch').classList.remove('invisible');
 }
 
-document.querySelector(".dislike4").addEventListener( 'click', cleanProfiles );
-document.querySelector(".like4").addEventListener( 'click', cleanProfiles );
+document.querySelector(".dislike10").addEventListener( 'click', cleanProfiles );
+document.querySelector(".like10").addEventListener( 'click', cleanProfiles );
 
 /* рандамайзер -- хавае тэксцік "ура вы ўсіх палайкалі" і паказывае на яго месцы рандомны профіль. хавае таксама кнопкі лайк-дызлайк */
 

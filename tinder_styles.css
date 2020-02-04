@@ -8,9 +8,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 	background-color: antiquewhite;
-	height: auto;
-	
-	
+	/*overflow: hidden;*/
 }
 
 .main-container {
@@ -21,7 +19,6 @@ font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	box-shadow: 4px 3px 8px 2px #969696;
 	background-color: #f8f8f8;
-	overflow: hidden;
 
 }
 
