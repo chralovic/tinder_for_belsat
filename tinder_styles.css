@@ -8,16 +8,15 @@ body {
 	font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 	overflow: hidden;
+    	background-color: #f8f8f8;
 }
 
 .main-container {
 	margin:0 auto;
 	width: 375px;
 	height: 667px;
-	border-radius: 20px;
+    background-color: white;
 	text-align: center;
-	box-shadow: 4px 3px 8px 2px #969696;
-	background-color: #f8f8f8;
 	position: relative;
 
 }
@@ -32,13 +31,13 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .main-container__text, .know__text {
-	font-size: 18px;
+	font-size: 17px;
 	padding: 20px 25px 0px 25px;
 	text-align: left;
 }
 
 .main-container__text--share {
-	font-size: 18px;
+	font-size: 17px;
 	padding: 10px 25px 0px 29px;
 	text-align: left;
 }
@@ -90,7 +89,6 @@ font-family: 'Montserrat', sans-serif;
 
 .profile__photo {
 	width: 375px;
-	border-radius: 20px;
 	position: absolute;
 	top: 0px;
 	left: 0.01em;
@@ -125,6 +123,8 @@ font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	top: 420px;
 	left: 1.2rem;
+    padding-right: 25px; 
+    
 }
 
 
@@ -151,9 +151,31 @@ font-family: 'Montserrat', sans-serif;
 	margin: 0 40px;
 	cursor: pointer;
 	top: 550px;
-	box-shadow: 0px 1px 27px -12px rgba(166,164,166,0.57);
+    background-color: white;
+	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
 }
 
+
+.like-button:hover {
+    color: #54eea1;
+}
+
+.dislike-button:hover {
+     color: #f86486;
+}
+
+
+.like-button:active {
+   border-color: #44d48c;
+    border-width: 2px;
+      border-style: solid;
+}
+
+.dislike-button:active{
+    border-color: #e8315b;
+    border-width: 2px;
+      border-style: solid;
+}
 
 .itsAMatch {
 	position: absolute;
