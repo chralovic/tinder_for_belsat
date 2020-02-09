@@ -2,18 +2,19 @@
 
 * {
     box-sizing: border-box;
+	margin: 0;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
-    background-color: #f8f8f8;
+	margin: 0;
 }
 
 .main-container {
 	margin: 0 auto;
-	width: 375px;
+	width: 275px;
 	height: 667px;
     background-color: white;
 	text-align: center;
@@ -24,33 +25,33 @@ body {
 /*ПЕРШЫ ЭКРАН*/
 
 .main-container__header {
-	font-size: 28px;
-	font-weight: 700;
-	padding: 50px 10px 0px 10px;
+	font-size: 25px;
+	font-weight: 500;
+	padding: 0px 5px 0px 5px;
 }
 
 .main-container__text, .know__text {
-	font-size: 17px;
-	padding: 20px 35px 0px 35px;
+	font-size: 14px;
+	padding: 20px 25px 0px 25px;
 	text-align: left;
 }
 
 .main-container__text--share {
-	font-size: 17px;
-	padding: 10px 25px 0px 29px;
+	font-size: 14px;
+	padding: 10px 25px 0px 25px;
 	text-align: left;
+	margin-bottom: 40px;
 }
 
 .main-container__button, .know__button {
-	width: 280px;
-	height: 60px;
+	width: 200px;
+	height: 50px;
 	background-color: lightcoral;
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	border-radius: 40px;
-	margin-top: 40px;
 	position: relative;
-    top: 50%;
+    top: 10%;
 	border: none;
 	cursor: pointer;
 }
@@ -61,6 +62,8 @@ body {
 
 .main-container__button:active, .know__button:active {
 	background-color: indianred;
+	outline: none;
+    border: none;
 }
 
 .know__button {
@@ -87,44 +90,49 @@ body {
 
 
 .profile__photo {
-	width: 375px;
+	width: 270px;
 	position: absolute;
-	top: 0px;
-	left: 0.01em;
+	top: 73px;
+	left: 0.3em;
+	z-index: 0;
 }
 
 .profile__name {
 	text-align: left;
 	font-weight: 400;
-	font-size: 23px;
+	font-size: 18px;
 	position: absolute;
-	color: black;
-	top: 367px;
+	color: white;
+	top: 293px;
 	left: 1.2rem;
+	z-index: 2;
 }
 
 .icon-house {
 	font-size: 13px;
 	left: -1.5rem;
 	position: absolute;
-	color: black;
+	color: white;
+	z-index: 2;
 }
 
 .profile__city {
 	text-align: left;
 	position: absolute;
-	color: black;
-	top: 410px;
+	color: white;
+	top: 318px;
 	left: 2.8rem;
+	font-size: 15px;
+	z-index: 2;
 }
 
 .profile__bio {
 	text-align: left;
 	position: absolute;
-	top: 450px;
+	top: 360px;
 	left: 1.2rem;
     padding-right: 25px; 
-    
+	font-size: 14px;
 }
 
 
@@ -132,25 +140,24 @@ body {
 .dislike-button {
   color: #e8315b;
 	font-size: 37px;
-	left: 30px;
+	left: 50px;
 }
 
 .like-button {
   color: #44d48c;
 	font-size: 31px;
-	right: 30px;
+	right: 50px;
 	
 }
 
 .like-dislike-button  {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	border-radius: 180px;
 	border: none;
 	position: absolute;
-	margin: 0 40px;
 	cursor: pointer;
-	top: 570px;
+	top: 462px;
     background-color: white;
 	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
 }
@@ -166,15 +173,15 @@ body {
 
 
 .like-button:active {
-   border-color: #44d48c;
-    border-width: 2px;
-      border-style: solid;
+	box-shadow: 5px 5px 37px -12px #43b77d;
+	outline: none;
+    border: none;
 }
 
 .dislike-button:active{
-    border-color: #e8315b;
-    border-width: 2px;
-      border-style: solid;
+    box-shadow: 4px 4px 27px -12px #e8315b;
+	outline: none;
+    border: none;
 }
 
 .itsAMatch {
@@ -186,14 +193,50 @@ body {
 
 .a2a_kit {
 	position: absolute;
-	top: 580px;
+	top: 480px;
+	left: 20%;
+}
+
+.phone {
+	visibility: hidden;
+}
+
+
+.profile-forever-alone {
+	position: absolute;
 	left: 60px;
-	
-}
-/**/
-
-@media (max-width: ) {
-	
+	top: 280px;
 }
 
+.know__text {
+	font-size: 25px;
+	margin-top: 50px;
+}
 
+
+/* для 6 айфона
+
+@media (min-width: 414px ) {
+	
+}
+*/
+
+
+/* для дэсктопа*/
+
+@media (min-width: 768px ) {
+	.phone {
+	visibility: visible;
+	position: absolute;
+	width: 300px;
+	margin: 0 auto;
+	right: -15px;
+	z-index: 0;
+}
+	
+	.mini-main-contanier {
+		padding-top: 90px;
+	}
+
+	
+}
