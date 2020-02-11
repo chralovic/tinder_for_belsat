@@ -214,83 +214,97 @@ body {
 }
 
 
+/******** для ўсім што паміж тэл і дэсктопам *******/
 
-/****** для дэсктопа*******/
-
-@media (min-width: 768px ) {
-	.phone {
-	visibility: visible;
-	position: absolute;
-	width: 300px;
-	margin: 0 auto;
-	right: -15px;
-	z-index: 0;
-}
-	
-	.mini-main-contanier {
-		padding-top: 90px;
-	}
-
-	
-}
-
-
-/******** для 6 айфона *******/
-
-@media (max-width: 375px ) {
-	
+@media screen 
+	and (min-width: 374px ) 
+    and (max-width: 768px) {
 	.phone {
 	position: absolute;
 }
-	
-	.main-container__header {
-	font-size: 30px;
-	font-weight: 500;
-	padding: 0px 5px 20px 5px;
-}
-
 	.main-container {
-	margin: 50px auto;
-	width: 375px;
-	height: 667px;
+	width: 414px;
+	height: 736px;
     background-color: white;
 	text-align: center;
 	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 6px 37px -12px rgba(166,164,166,1);
+	
 }
 
-	.main-container__text, .know__text {
-	font-size: 19px;
-	padding: 20px 25px 0px 25px;
+	
+	/*ПЕРШЫ ЭКРАН*/
+
+.main-container__header {
+	font-size: 35px;
+	font-weight: 500;
+	padding: 40px 5px 0px 5px;
+}
+
+.main-container__text, .know__text {
+	font-size: 22px;
+	padding: 30px 25px 0px 25px;
 	text-align: left;
 }
-	
-	.main-container__text--share {
-	font-size: 19px;
+
+.main-container__text--share {
+	font-size: 22px;
 	padding: 10px 25px 30px 25px;
 	text-align: left;
 	margin-bottom: 40px;
 }
-	
-	.main-container__button {
-	width: 250px;
+
+.main-container__button, .know__button {
+	width: 300px;
 	height: 70px;
 	background-color: lightcoral;
 	color: white;
-	font-size: 25px;
+	font-size: 30px;
 	border-radius: 40px;
 	position: relative;
     top: 10%;
 	border: none;
+	cursor: pointer;
 }
-	
-	/*Экран профіляў*/
+
+.main-container__button:hover, .know__button:hover {
+	opacity: 90%;
+}
+
+.main-container__button:active, .know__button:active {
+	background-color: indianred;
+	outline: none;
+    border: none;
+}
+
+.know__button {
+	top: -170px;
+}
+
+.know__text {
+	position: absolute;
+	top: 100px;
+	padding: 0 30px;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: center
+}
+
+
+.invisible {
+	visibility: hidden;
+}
+
+
+/*Экран профіляў*/
 
 
 
 .profile__photo {
-	width: 376px;
+	width: 415px;
 	position: absolute;
-	top: -53px;
+	top: -5px;
 	left: 0.0em;
 	z-index: 0;
 }
@@ -298,16 +312,16 @@ body {
 .profile__name {
 	text-align: left;
 	font-weight: 400;
-	font-size: 25px;
+	font-size: 26px;
 	position: absolute;
 	color: white;
-	top: 243px;
+	top: 333px;
 	left: 1.2rem;
 	z-index: 2;
 }
 
 .icon-house {
-	font-size: 19px;
+	font-size: 13px;
 	left: -1.5rem;
 	position: absolute;
 	color: white;
@@ -318,19 +332,19 @@ body {
 	text-align: left;
 	position: absolute;
 	color: white;
-	top: 278px;
+	top: 368px;
 	left: 2.8rem;
-	font-size: 19px;
+	font-size: 22px;
 	z-index: 2;
 }
 
 .profile__bio {
 	text-align: left;
 	position: absolute;
-	top: 360px;
+	top: 430px;
 	left: 1.2rem;
     padding-right: 25px; 
-	font-size: 17px;
+	font-size: 23px;
 }
 
 
@@ -349,13 +363,13 @@ body {
 }
 
 .like-dislike-button  {
-	width: 85px;
-	height: 85px;
+	width: 90px;
+	height: 90px;
 	border-radius: 180px;
 	border: none;
 	position: absolute;
 	cursor: pointer;
-	top: 482px;
+	top: 592px;
     background-color: white;
 	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
 }
@@ -391,11 +405,204 @@ body {
 
 .a2a_kit {
 	position: absolute;
-	top: 480px;
-	left: 28%;
+	top: 580px;
+	left: 20%;
+}
+
+.phone {
+	visibility: hidden;
 }
 
 
+.profile-forever-alone {
+	position: absolute;
+	left: 60px;
+	top: 280px;
+}
+
+.know__text {
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+
+	.a2a_button_facebook, .a2a_button_twitter, .a2a_button_telegram, .a2a_button_vk, .a2a_button_viber {
+		width: 50px;
+}
+	
+}
+
+	
+
+/******** для айфона X, 5, 6, SE *******/
+
+@media screen
+	and (min-width: 200px) 
+    and (max-width: 375px) {
+	
+	.phone {
+	position: absolute;
+}
+	
+	.main-container__header {
+	font-size: 30px;
+	font-weight: 500;
+	padding: 50px 5px 20px 5px;
+}
+
+	.main-container {
+	margin: 0px;
+	width: 375px;
+	height: 667px;
+    background-color: white;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+		
+}
+
+	.main-container__text, .know__text {
+	font-size: 19px;
+	padding: 0px 25px 0px 25px;
+	text-align: left;
+}
+	
+	.main-container__text--share {
+	font-size: 19px;
+	padding: 10px 25px 30px 25px;
+	text-align: left;
+	margin-bottom: 40px;
+}
+	
+	.main-container__button {
+	width: 250px;
+	height: 70px;
+	background-color: lightcoral;
+	color: white;
+	font-size: 25px;
+	border-radius: 40px;
+	position: relative;
+    top: 10%;
+	border: none;
+}
+	
+	/*Экран профіляў*/
+
+
+
+.profile__photo {
+	width: 376px;
+	position: absolute;
+	top: -7px;
+	left: 0.0em;
+	z-index: 0;
+}
+
+.profile__name {
+	text-align: left;
+	font-weight: 400;
+	font-size: 25px;
+	position: absolute;
+	color: white;
+	top: 300px;
+	left: 1.2rem;
+	z-index: 2;
+}
+
+.icon-house {
+	font-size: 19px;
+	left: -1.5rem;
+	position: absolute;
+	color: white;
+	z-index: 2;
+}
+
+.profile__city {
+	text-align: left;
+	position: absolute;
+	color: white;
+	top: 332px;
+	left: 2.8rem;
+	font-size: 19px;
+	z-index: 2;
+}
+
+.profile__bio {
+	text-align: left;
+	position: absolute;
+	top: 390px;
+	left: 1.2rem;
+    padding-right: 25px; 
+	font-size: 20px;
+}
+
+
+/*кнопкі*/
+.dislike-button {
+  color: #e8315b;
+	font-size: 37px;
+	left: 60px;
+}
+
+.like-button {
+  color: #44d48c;
+	font-size: 31px;
+	right: 60px;
+	
+}
+
+.like-dislike-button  {
+	width: 85px;
+	height: 85px;
+	border-radius: 180px;
+	border: none;
+	position: absolute;
+	cursor: pointer;
+	top: 532px;
+    background-color: white;
+	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
+}
+
+
+.like-button:hover {
+    color: #54eea1;
+}
+
+.dislike-button:hover {
+     color: #f86486;
+}
+
+
+.like-button:active {
+	box-shadow: 5px 5px 37px -12px #43b77d;
+	outline: none;
+    border: none;
+}
+
+.dislike-button:active{
+    box-shadow: 4px 4px 27px -12px #e8315b;
+	outline: none;
+    border: none;
+}
+
+.itsAMatch {
+	position: absolute;
+	top: 30px;
+	transform: rotate(-20deg);
+	left: -40px;
+}
+
+.a2a_kit {
+	position: absolute;
+	top: 580px;
+	left: 20%;
+}
+
+	.a2a_button_facebook, .a2a_button_twitter, .a2a_button_telegram, .a2a_button_vk, .a2a_button_viber {
+		width: 50px;
+}
+	
+	
 .profile-forever-alone {
 	position: absolute;
 	left: 60px;
@@ -414,3 +621,26 @@ body {
 }
 	
 }
+
+
+/****** для дэсктопа*******/
+
+@media screen
+	and (min-width: 768px)
+	and (max-width: 4000px ) {
+	.phone {
+	visibility: visible;
+	position: absolute;
+	width: 300px;
+	margin: 0 auto;
+	right: -15px;
+	z-index: 0;
+}
+	
+	.mini-main-contanier {
+		padding-top: 90px;
+	}
+	
+}
+
+
