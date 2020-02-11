@@ -644,3 +644,21 @@ body {
 }
 
 
+.like-dislike-button:active {
+	  transform: scale(.6);
+	transition-property: transform;
+	transition-duration: 0.5s;
+	
+}
+
+.profile__name, .profile__city{
+ text-shadow: 1px 1px black;
+}
+
+
+/* ВАЎ!
+.profile__name, .profile__city{
+ text-shadow: 2px 2px #ff0000;
+}
+
+*/
