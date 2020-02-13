@@ -1,10 +1,7 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 /*АГУЛЬНЫЯ ПАРАМЕТРЫ*/
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 	margin: 0;
 }
 
@@ -22,7 +19,7 @@ body {
     background-color: white;
 	text-align: center;
 	position: relative;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 
@@ -57,8 +54,6 @@ body {
     top: 10%;
 	border: none;
 	cursor: pointer;
-	background-image: -webkit-gradient(linear, left top, right top, from(#fd3178), to(#ff7158));
-	background-image: -o-linear-gradient(left, #fd3178 0%, #ff7158 100%);
 	background-image: linear-gradient(to right, #fd3178 0%, #ff7158 100%);
 }
 
@@ -165,8 +160,7 @@ body {
 	cursor: pointer;
 	top: 462px;
     background-color: white;
-	-webkit-box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
-	        box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
+	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
 }
 
 
@@ -180,15 +174,13 @@ body {
 
 
 .like-button:active {
-	-webkit-box-shadow: 5px 5px 37px -12px #43b77d;
-	        box-shadow: 5px 5px 37px -12px #43b77d;
+	box-shadow: 5px 5px 37px -12px #43b77d;
 	outline: none;
     border: none;
 }
 
 .dislike-button:active{
-    -webkit-box-shadow: 4px 4px 27px -12px #e8315b;
-            box-shadow: 4px 4px 27px -12px #e8315b;
+    box-shadow: 4px 4px 27px -12px #e8315b;
 	outline: none;
     border: none;
 }
@@ -196,9 +188,7 @@ body {
 .itsAMatch {
 	position: absolute;
 	top: 30px;
-	-webkit-transform: rotate(-20deg);
-	    -ms-transform: rotate(-20deg);
-	        transform: rotate(-20deg);
+	transform: rotate(-20deg);
 	left: -40px;
 	overflow: hidden;
 }
@@ -235,8 +225,7 @@ body {
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	-webkit-box-shadow: 5px 6px 37px -12px rgba(166,164,166,1);
-	        box-shadow: 5px 6px 37px -12px rgba(166,164,166,1);
+	box-shadow: 5px 6px 37px -12px rgba(166,164,166,1);
 	
 }
 
@@ -378,8 +367,7 @@ body {
 	cursor: pointer;
 	top: 592px;
     background-color: white;
-	-webkit-box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
-	        box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
+	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
 }
 
 
@@ -393,15 +381,13 @@ body {
 
 
 .like-button:active {
-	-webkit-box-shadow: 5px 5px 37px -12px #43b77d;
-	        box-shadow: 5px 5px 37px -12px #43b77d;
+	box-shadow: 5px 5px 37px -12px #43b77d;
 	outline: none;
     border: none;
 }
 
 .dislike-button:active{
-    -webkit-box-shadow: 4px 4px 27px -12px #e8315b;
-            box-shadow: 4px 4px 27px -12px #e8315b;
+    box-shadow: 4px 4px 27px -12px #e8315b;
 	outline: none;
     border: none;
 }
@@ -409,9 +395,7 @@ body {
 .itsAMatch {
 	position: absolute;
 	top: 30px;
-	-webkit-transform: rotate(-20deg);
-	    -ms-transform: rotate(-20deg);
-	        transform: rotate(-20deg);
+	transform: rotate(-20deg);
 	left: -40px;
 }
 
@@ -630,8 +614,7 @@ body {
 	cursor: pointer;
 	top: 532px;
     background-color: white;
-	-webkit-box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
-	        box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
+	box-shadow: 2px 3px 27px -12px rgba(166,164,166,1);
 }
 
 
@@ -645,15 +628,13 @@ body {
 
 
 .like-button:active {
-	-webkit-box-shadow: 5px 5px 37px -12px #43b77d;
-	        box-shadow: 5px 5px 37px -12px #43b77d;
+	box-shadow: 5px 5px 37px -12px #43b77d;
 	outline: none;
     border: none;
 }
 
 .dislike-button:active{
-    -webkit-box-shadow: 4px 4px 27px -12px #e8315b;
-            box-shadow: 4px 4px 27px -12px #e8315b;
+    box-shadow: 4px 4px 27px -12px #e8315b;
 	outline: none;
     border: none;
 }
@@ -661,9 +642,7 @@ body {
 .itsAMatch {
 	position: absolute;
 	top: 30px;
-	-webkit-transform: rotate(-20deg);
-	    -ms-transform: rotate(-20deg);
-	        transform: rotate(-20deg);
+	transform: rotate(-20deg);
 	left: -40px;
 	overflow: hidden;
 }
@@ -829,9 +808,7 @@ body {
 		.itsAMatch {
 	position: absolute;
 	top: 65px;
-	-webkit-transform: rotate(-20deg);
-	    -ms-transform: rotate(-20deg);
-	        transform: rotate(-20deg);
+	transform: rotate(-20deg);
 	left: -40px;
 	
 }
@@ -841,17 +818,9 @@ body {
 
 
 .like-dislike-button:active {
-	  -webkit-transform: scale(.6);
-	      -ms-transform: scale(.6);
-	          transform: scale(.6);
-	-webkit-transition-property: -webkit-transform;
-	transition-property: -webkit-transform;
-	-o-transition-property: transform;
+	  transform: scale(.6);
 	transition-property: transform;
-	transition-property: transform, -webkit-transform;
-	-webkit-transition-duration: 0.5s;
-	     -o-transition-duration: 0.5s;
-	        transition-duration: 0.5s;
+	transition-duration: 0.5s;
 	
 }
 
@@ -866,8 +835,6 @@ body {
 }
 
 */
-
-
 
 
 
